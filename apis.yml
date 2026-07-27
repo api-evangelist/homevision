@@ -1,8 +1,25 @@
 aid: homevision
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/homevision.png
 name: HomeVision
-description: 'HomeVision is a company surfaced as a portfolio company of initialized-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: enterprise-saas. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'HomeVision is an AI-powered collateral underwriting and appraisal quality-control
+  platform for mortgage lenders and appraisal management companies (AMCs). Its MIRA platform pairs
+  machine intelligence with human review to transform unstructured appraisal content — narrative
+  commentary, sketches, photos and addenda — into structured, review-ready data using OCR, large
+  language models, natural language processing and computer vision, and integrates with popular LOS
+  and AMS platforms plus external data such as public records and MLS. Founded in 2019 and based in
+  San Francisco, HomeVision is backed by Initialized Capital and Newark Venture Partners, and offers
+  private API integration to customer order-management systems (no public developer portal).'
 url: https://raw.githubusercontent.com/api-evangelist/homevision/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise Saas
+- Mortgage
+- Real Estate
+- Appraisal
+- Collateral Underwriting
+- Artificial Intelligence
+- Machine Learning
+- Document Processing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/homevision-domain-security.yml
 - type: Website
   url: https://homevision.co/
+- type: Login
+  url: https://app.homevision.co/login
+- type: Support
+  url: https://homevision.co/contact
+- type: Security
+  url: https://homevision.notion.site/Security-802d2435e6a147789880d8f511252efe
+- type: TermsOfService
+  url: https://homevision.notion.site/Terms-of-Service-86c386056d194687a72e287114d93bd6
+- type: PrivacyPolicy
+  url: https://homevision.notion.site/HomeVision-Privacy-Policy-1f05524e772f472dbe02eb34266fcea1
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
